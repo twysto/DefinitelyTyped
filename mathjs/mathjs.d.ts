@@ -1296,6 +1296,7 @@ declare namespace mathjs {
 		subset(index: Index, replacement?: any, defaultValue?: any): Matrix;
 		resize(size: MathArray|Matrix, defaultValue?: number|string): Matrix;
 		clone(): Matrix;
+		map(callback: (value: any, index: number, matrix: Matrix)=>any);
 	}
 
 	export interface BigNumber {
